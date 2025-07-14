@@ -20,27 +20,27 @@
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style1">Full Name</td>
-                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtName" runat="server"></asp:TextBox><br /></td>
+                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtName" runat="server" required ></asp:TextBox><br /></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Email</td>
-                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox><br /></td>
+                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtEmail" runat="server" required ></asp:TextBox><br /></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Date of Birth</td>
-                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtDoB" runat="server"></asp:TextBox><br /></td>
+                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtDoB" runat="server" required ></asp:TextBox><br /></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Gender</td>
-                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtGender" runat="server"></asp:TextBox><br /></td>
+                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtGender" runat="server" required ></asp:TextBox><br /></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Department</td>
-                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtDepartment" runat="server"></asp:TextBox><br /></td>
+                    <td class="auto-style2">&nbsp; <asp:TextBox ID="txtDepartment" runat="server" required ></asp:TextBox><br /></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
