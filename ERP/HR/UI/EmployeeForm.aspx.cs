@@ -13,5 +13,11 @@ namespace HR.UI
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "Employee: " + txtName.Text + " | Email: " + txtEmail.Text + " | Date of Birth: " + txtDoB.Text + 
+                " | Gender: " + txtGender.Text + " | Department: " + txtDepartment.Text;
+        }
     }
 }
