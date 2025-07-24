@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="HR.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - HR Management</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Content/custom-styles.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page-wrapper">
+
+            <div class="sidebar-nav">
+                <div class="sidebar-brand">
+                    <a runat="server" href="~/">HR System</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a runat="server" href="~/UI/EmployeeInfo.aspx">Employee Information</a></li>
+                    <li><a runat="server" href="~/UI/DepartmentSetup.aspx">Department Details</a></li>
+                    <li><a runat="server" href="~/UI/CompanySetup.aspx">Company Details</a></li>
+                    <li><a runat="server" href="~/UI/LeaveEntry.aspx">Leave Records</a></li>
+                    <li><a runat="server" href="~/UI/AttendanceEntry.aspx">Attendance</a></li>
+                    <li><a runat="server" href="~/About">About</a></li>
+                    <li><a runat="server" href="~/Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="main-page-content">
+                
+                <div class="content-body">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <footer>
+                    <hr />
+                    <p>&copy; <%: DateTime.Now.Year %> - HR Management System</p>
+                </footer>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
